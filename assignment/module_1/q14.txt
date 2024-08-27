@@ -1,0 +1,6 @@
+ What are negative indexes and why are they used?
+
+ Negative indexes in Python allow you to access elements from the end of a sequence. 
+ They're handy when you want to conveniently access elements without knowing the 
+ sequence's length. They simplify code by eliminating the need to calculate offsets
+ from the end manually, making code shorter and more readable.

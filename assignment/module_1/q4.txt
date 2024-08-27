@@ -1,0 +1,22 @@
+How memory is managed in Python?
+
+Python manages memory through its Memory Manager, which handles allocation and 
+deallocation of memory for objects. Here's a simplified overview:
+
+1. Object Creation: Memory is allocated when you create an object like an 
+   integer, string, list, or custom object.
+
+2. Reference Counting: Python tracks the number of references to each object. 
+   When an object's reference count drops to zero, meaning there are no more
+   references to it, Python deallocates its memory.
+
+3. Garbage Collection: Python's garbage collector periodically identifies 
+   and deallocates unreachable objects that reference counting alone cannot
+   detect, such as cyclic references.
+
+4. Memory Pool: Python's memory manager uses pre-allocated memory pools for
+   small objects like integers and strings, reducing overhead and improving
+   performance.
+
+5. Memory Optimizations: Python implements various optimizations, like object
+   reusing, to minimize memory fragmentation and improve utilization.
